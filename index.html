@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159328925-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-159328925-1');
+	</script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Калькулятор газодинамических функций">
+    <meta name="Keywords" content="газовая динамика, газодинамические функции, таблица газодинамических функций">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Калькулятор газодинамических функций</title>
+  </head>
+  <body>
+<div class="container">
+	<h3>Калькулятор газодинамических функций</h3>
+	<div class="row">
+		<div class="col-sm">
+<div class="form-group">
+    <label for="adiab_koeff">Коэффициент адиабаты:</label>
+    <input type="text" class="form-control" id="adiab_koeff">
+    <button class="btn btn-primary mt-2" id="air">воздух</button>
+    <button class="btn btn-primary mt-2" id="metan">метан</button>
+  </div>
+<div class="form-group">
+    <label for="variable">Выберите переменную</label>
+    <select class="form-control" id="variable">
+      <option value="Mach">M</option>
+      <option value="lambda">&lambda;</option>
+      <option value="tau">&tau;</option>
+      <option value="pi">&pi;</option>
+      <option value="epsilon">&epsilon;</option>
+    </select>
+  </div>
+<div class="form-group">
+    <label for="value">Задайте ее значение</label>
+    <input type="text" class="form-control" id="value">
+  </div>
+  <button type="submit" id="calculate" class="btn btn-primary mb-2">Вычислить</button>
+  </div>
+
+  <div class="col-sm">
+    <div class="alert" role="alert">
+    </div>
+    </div>
+    </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="gasdyn_functions.js"></script>
+    <script src="gasdyn_result.js"></script>
+  </body>
+</html>
